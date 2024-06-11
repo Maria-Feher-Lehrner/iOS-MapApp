@@ -74,11 +74,11 @@ struct MapView: View {
             }
             .padding()
         }
-        /*.onTapGesture {
+        .onTapGesture {
             if showBubble{
                 showBubble = false
             }
-        }*/
+        }
     }
 }
 

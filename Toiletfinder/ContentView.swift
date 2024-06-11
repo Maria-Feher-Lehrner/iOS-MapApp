@@ -13,15 +13,15 @@ struct ContentView: View {
     @EnvironmentObject var favouritesManager: FavouritesManager
         
     var body: some View {
-        VStack {
-            NavigationView{
+       VStack {
+            //NavigationView{
                 List(repository.toiletList, id: \.id) { item in
                     NavigationLink(destination: MapView(toilet: item)) {
-                        ItemRowView(district: item.district, address: item.address)
+                        ItemRowView(district: item.district, address: item.address, category: item.category ?? "toilet.circle")
                     }
                 }
                 .navigationTitle(Text("WC Anlagen in Wien"))
-            }
+            //}
             Button(action: {repository.load()}) {
                 Image(systemName: "memories")
                 //TODO: hier evtl. noch Button weiter stylen.

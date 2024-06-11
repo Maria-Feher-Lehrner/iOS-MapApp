@@ -11,10 +11,10 @@ struct FavouritesView: View {
         @EnvironmentObject var favouritesManager: FavouritesManager
 
     var body: some View {
-            NavigationView {
+            //NavigationView {
                 List(favouritesManager.favourites, id: \.id) { item in
                     NavigationLink(destination: MapView(toilet: item)) {
-                        ItemRowView(district: item.district, address: item.address)
+                        ItemRowView(district: item.district, address: item.address, category: item.category ?? "toilet.circle")
                             .swipeActions{
                                 Button(role: .destructive){
                                     favouritesManager.remove(item)
@@ -25,7 +25,7 @@ struct FavouritesView: View {
                     }
                 }
                 .navigationTitle(Text("Favoriten"))
-            }
+            //}
         }
 }
 
