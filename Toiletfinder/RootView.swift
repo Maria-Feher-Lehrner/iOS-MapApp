@@ -10,38 +10,21 @@ import SwiftUI
 struct RootView: View {
         @StateObject var repository = Repository()
         @StateObject var favouritesManager = FavouritesManager()
-        @State private var selectedTab: Tab = .contentView
-    
-    enum Tab {
-        case contentView
-        case favouritesView
-    }
 
         var body: some View {
-            TabView(selection: $selectedTab) {
-                NavigationContainer {
-                    ContentView(repository: repository)
-                }
-                .tag(Tab.contentView)
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-                .environmentObject(favouritesManager)
-                
-                NavigationContainer{
-                    FavouritesView()
-                }
-                .tag(Tab.favouritesView)
-                .tabItem {
-                    Label("Favoriten", systemImage: "star.square.on.square")
-                }
-                .environmentObject(favouritesManager)
+            TabView() {
+                ContentView(repository: repository)
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                    .environmentObject(favouritesManager)
+                    
+                FavouritesView()
+                    .tabItem {
+                        Label("Favoriten", systemImage: "star.square.on.square")
+                    }
+                    .environmentObject(favouritesManager)
             }
-            /*.onChange(of: selectedTab) { newValue in
-                if newValue != .contentView {
-                    selectedTab = .contentView
-                }
-            }*/
         }
 }
 

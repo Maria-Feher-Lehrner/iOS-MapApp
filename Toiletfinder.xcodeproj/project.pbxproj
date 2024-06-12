@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FBE74102C189925003018ED /* NavigationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE740F2C189925003018ED /* NavigationContainer.swift */; };
 		CE0B9E782C13294C00A4BBE3 /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B9E772C13294C00A4BBE3 /* FavouritesManager.swift */; };
 		CE1722C02C0E086700E2DD6E /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1722BF2C0E086700E2DD6E /* FavouritesView.swift */; };
 		CE1722C22C0E142400E2DD6E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1722C12C0E142400E2DD6E /* RootView.swift */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1FBE740F2C189925003018ED /* NavigationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationContainer.swift; sourceTree = "<group>"; };
 		CE0B9E772C13294C00A4BBE3 /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
 		CE1722BF2C0E086700E2DD6E /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 		CE1722C12C0E142400E2DD6E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 			children = (
 				CE7067302C04B6BF00DC5E21 /* ToiletfinderApp.swift */,
 				CE1722C12C0E142400E2DD6E /* RootView.swift */,
-				1FBE740F2C189925003018ED /* NavigationContainer.swift */,
 				CE7067322C04B6BF00DC5E21 /* ContentView.swift */,
 				CE9AA81D2C0DC8E7009A50AE /* MapView.swift */,
 				CE1722BF2C0E086700E2DD6E /* FavouritesView.swift */,
@@ -170,7 +167,6 @@
 				CE9AA81E2C0DC8E7009A50AE /* MapView.swift in Sources */,
 				CE0B9E782C13294C00A4BBE3 /* FavouritesManager.swift in Sources */,
 				CE1722C02C0E086700E2DD6E /* FavouritesView.swift in Sources */,
-				1FBE74102C189925003018ED /* NavigationContainer.swift in Sources */,
 				CE7067332C04B6BF00DC5E21 /* ContentView.swift in Sources */,
 				CE7067452C04C19A00DC5E21 /* ItemRowView.swift in Sources */,
 				CE28A82C2C1714D4006CDE69 /* InfoContent.swift in Sources */,

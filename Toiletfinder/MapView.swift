@@ -25,11 +25,18 @@ struct MapView: View {
             Map(coordinateRegion: $mapRegion, annotationItems: [toilet]){
                 toilet in
                 MapAnnotation(coordinate: toilet.coordinate) {
-                    Image(systemName: "mappin.and.ellipse")
-                        .foregroundColor(.red)
-                        .onTapGesture {
-                            showBubble.toggle()
-                        }
+                    ZStack {
+                                               
+                        Rectangle()
+                            .fill(Color.clear)
+                            .frame(width: 44, height: 44)
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                showBubble.toggle()
+                            }
+                        Image(systemName: "mappin.and.ellipse")
+                            .foregroundColor(.red)
+                    }
                 }
             }
             .overlay(

@@ -11,7 +11,7 @@ struct FavouritesView: View {
         @EnvironmentObject var favouritesManager: FavouritesManager
 
     var body: some View {
-            //NavigationView {
+            NavigationStack {
                 List(favouritesManager.favourites, id: \.id) { item in
                     NavigationLink(destination: MapView(toilet: item)) {
                         ItemRowView(district: item.district, address: item.address, category: item.category ?? "toilet.circle")
@@ -25,7 +25,7 @@ struct FavouritesView: View {
                     }
                 }
                 .navigationTitle(Text("Favoriten"))
-            //}
+            }
         }
 }
 
