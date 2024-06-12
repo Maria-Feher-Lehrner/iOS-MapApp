@@ -46,6 +46,9 @@ struct InfoBubbleView: View {
 
 /*struct InfoBubbleView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoBubbleView()
+        InfoBubbleView(category: "Herren 2; Herren Nacht 1; Damen Nacht 1, Damen 4, Pissoir",
+                       hours: "00:00-24:00 Uhr",
+                       limitations: "ganzjährig ohne Einschränkungen",
+                       personnel: "Mo-Fr: 10-18 Uhr", showBubble: true)
     }
 }*/

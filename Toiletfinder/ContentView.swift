@@ -24,7 +24,6 @@ struct ContentView: View {
             }
             Button(action: {repository.load()}) {
                 Image(systemName: "memories")
-                //TODO: hier evtl. noch Button weiter stylen.
             }
             .padding()
         }
@@ -34,6 +33,6 @@ struct ContentView: View {
 
 /*struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(repository: Repository())
     }
 }*/

@@ -33,8 +33,8 @@ struct ItemRowView: View {
     }
 }
 
-struct ItemRowView_Previews: PreviewProvider {
+/*struct ItemRowView_Previews: PreviewProvider {
     static var previews: some View {
         ItemRowView(district: 1, address: "Rathauspark / Felderstrasse", category: "unisex 1")
     }
-}
+}*/
